@@ -1,0 +1,13 @@
+.breadcrumb-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__top {
+    background-color: #0073bb;
+}
+/* .user__wrapper span,
+.user__wrapper small,
+.main__top h2 {
+    color: #fff;
+} */

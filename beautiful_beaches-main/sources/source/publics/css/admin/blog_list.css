@@ -1,0 +1,20 @@
+table thead tr th,
+table tbody tr td
+ {
+    text-align: center;
+    overflow: hidden;
+    max-height: 80px;
+    vertical-align: middle;
+}
+table thead tr th:nth-child(3),
+table tbody tr td:nth-child(3) {
+    min-width: 120px;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header .btn {
+    height:40px;
+}

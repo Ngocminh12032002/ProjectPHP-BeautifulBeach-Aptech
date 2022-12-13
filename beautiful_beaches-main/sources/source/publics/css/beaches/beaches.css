@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+a {
+    color: var(--primary-color);
+}
+
+.waviy {
+    position: relative;
+    /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2)); */
+}
+/* .blogs__title-h1 h1
+ {
+    color: var(--primary-color);
+} */
+.waviy span {
+    font-family: "Alfa Slab One", cursive;
+    position: relative;
+    display: inline-block;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(0.1s * var(--i));
+    font-size: 10rem;
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    60%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+}
+
+.services,
+.beaches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+}
+
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-item h2 {
+    display: inline-block;
+    font-size: 2.6rem;
+}
+
+.tabs i {
+    font-size: 2.4rem;
+    width: 32px;
+    position: relative;
+    top: 2px;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(194, 53, 100, 0.05);
+    border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+.tab-content {
+    padding: 28px 0;
+    margin: 0 auto;
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+    margin: 0 auto;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.tab__posts,
+.tab__beaches {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab__post {
+    position: relative;
+    width: 90%;
+    height: 180px;
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.tab__post:hover {
+    height: 350px;
+}
+
+.tab__post--img {
+    position: relative;
+    width: 90%;
+    height: 160px;
+    top: -20px;
+    left: 0px;
+    z-index: 1;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tab__post--img img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.tab__post--content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.tab__post:hover .tab__post--content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.3s;
+}
+
+/* end Service */
+
+/* Beaches */
+.tab__beach {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+
+.tab__beach--img img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.tab__beach:hover .tab__beach--image {
+    transform: scale(1.5) translate(10%, 10%);
+}
+
+.tab__beach::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.tab__beach:hover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(0deg,
+            rgba(30, 39, 46, 0.8) 20%,
+            rgba(30, 39, 46, 0));
+    z-index: 2;
+}
+
+.tab__beach--content {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    opacity: 0;
+    z-index: 10;
+    color: #fff;
+    padding: 10px 20px;
+    transform: translateX(-110%);
+    border-left: 5px solid #fff;
+    transition: all 0.4s ease;
+}
+
+.tab__beach:hover .tab__beach--content {
+    opacity: 1;
+    overflow: hidden;
+    transform: translateX(0);
+}
+
+.tab__beach--content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tab__beach--content p {
+    font-size: 1.6rem;
+    line-height: 26px;
+}
+
+.tab__beach--content h2,
+.tab__beach--content p {
+    transform: translateX(-100%);
+    transition: all 0.7s ease;
+    overflow: hidden;
+}
+
+.tab__beach:hover .tab__beach--content h2,
+.tab__beach:hover .tab__beach--content p {
+    transform: translateX(0);
+}
+
+.beaches__blog {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.beach__blog h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+
+.beach__blog {
+    position: relative;
+    width: 70%;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img_caption {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* .beaches__title p {
+  width: 90%;
+  padding: 0 34px;
+} */
+.beaches__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.beaches__title img {
+    width: 80%;
+}

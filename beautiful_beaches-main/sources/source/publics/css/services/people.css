@@ -1,0 +1,261 @@
+ *::selection {
+     background: var(--primary-color);
+     color: #fff;
+ }
+
+ body {
+     background: #f7f7f7;
+ }
+
+ section {
+     padding: 2rem 9%;
+     margin-bottom: 5rem;
+ }
+
+ .heading {
+     text-align: center;
+     font-size: 5.5rem;
+     padding: 1rem;
+     color: var(--primary-color);
+ }
+
+
+ .home {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     min-height: 100vh;
+     align-items: center;
+     background: url('https://www.fluentin3months.com/wp-content/uploads/2021/09/vietnamese.jpg') no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .home .content {
+     flex: 1 1 40rem;
+     padding-top: 6.5rem;
+ }
+
+ .home .image {
+     flex: 1 1 40rem;
+ }
+
+ .home .image img {
+     width: 100%;
+     padding: 1rem;
+     border-radius: 20%;
+     animation: float 3s linear infinite;
+ }
+
+ @keyframes float {
+
+     0%,
+     100% {
+         transform: translateY(0rem);
+     }
+
+     50% {
+         transform: translateY(3rem);
+     }
+ }
+
+ .home .content h3 {
+     font-size: 5rem;
+     color: var(--white-color);
+ }
+
+ .home .content p {
+     font-size: 2.3rem;
+     color: var(--white-color);
+     padding: 1rem 0;
+ }
+
+
+
+ :root {
+     --color-dark: #151C35;
+     --color-secodary-dark: #464C70;
+     --color-primary: #EE709D;
+     --color-text: #8297E2;
+     --color-light: #EBEBFB;
+ }
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 90px;
+ }
+
+ .board {
+     max-width: 987px;
+     width: 100%;
+     height: auto;
+     background: linear-gradient(to right, #FFFFFF, #6ddffad1, #FFFFFF);
+     text-align: center;
+     border-radius: 8px;
+     /* padding: 4em 0; */
+ }
+
+ /* content begin  */
+ .container_content {
+     display: block;
+     height: 100%;
+     margin: 5em 0;
+ }
+
+ .beaches__blog {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: auto;
+     margin: 0 auto;
+     margin-top: 40px;
+ }
+
+
+
+ .beach__blog {
+     position: relative;
+     width: 70%;
+     display: flex;
+     display: -ms-flexbox;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .img_caption {
+     text-align: center;
+     display: block;
+     margin-top: 5px;
+     margin-bottom: 15px;
+ }
+
+ .beaches__title p {
+     width: 90%;
+     margin: 20px 0;
+     padding: 0 34px;
+ }
+
+ .beaches__title {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .beaches__title img {
+     width: 80%;
+ }
+
+ /* content end  */
+
+
+ .swiper {
+     width: 600px;
+     height: auto;
+ }
+
+ .swiper .swiper-slide .flex {
+     margin: 3em 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .swiper .swiper-slide .comments {
+     text-align: justify;
+     background-color: var(--color-light);
+     padding: 1.5em 4em;
+     width: 100%;
+     border-radius: 5px;
+     font-size: .9em;
+     position: relative;
+     color: var(--text-color);
+ }
+
+ .swiper .swiper-slide .comments .comments__heading i {
+     font-size: 1.5em;
+ }
+
+ .swiper .swiper-slide .comments .comments__heading {
+     margin-bottom: 0.5em;
+ }
+
+ .swiper .swiper-slide .comments::after {
+     content: '';
+     position: absolute;
+     bottom: -19px;
+     left: 45%;
+     width: 0;
+     height: 0;
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     border-top: 20px solid var(--color-light);
+     z-index: -99;
+ }
+
+
+ .swiper .profile {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 1em;
+ }
+
+ .swiper .profile img {
+     width: 30%;
+     border-radius: 50%;
+     border: 5px solid var(--color-primary);
+     margin: 10px 0;
+ }
+
+ .swiper .profile>a {
+     text-decoration: none;
+     color: var(--color-light);
+ }
+
+ .swiper .profile>span {
+     color: var(--color-text);
+     font-size: .8em;
+ }
+
+ .swiper .swiper-button-prev,
+ .swiper-button-next {
+     color: var(--color-text);
+     display: none;
+ }
+
+ @media (min-width: 320px) {
+     .board {
+         width: auto;
+     }
+
+     .swiper {
+         width: 320px;
+     }
+
+     .board>h1,
+     p {
+         padding: 0 2em;
+     }
+ }
+
+ @media (min-width: 768px) {
+     .board {
+         width: 100%;
+     }
+
+     .swiper {
+         width: 600px;
+     }
+
+     .swiper .swiper-button-prev,
+     .swiper-button-next {
+         display: initial;
+     }
+
+ }

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "slug": "^5.3.0",
+    "slugify": "^1.6.5"
+  }
+}

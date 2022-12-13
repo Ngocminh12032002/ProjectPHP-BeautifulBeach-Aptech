@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.956" height="45.956" viewBox="0 0 45.956 45.956">
+  <g id="Group_7533" data-name="Group 7533" transform="translate(-12.753 -12.753)">
+    <g id="bxs-edit" transform="translate(12.753 12.753)">
+      <path id="Path_7005" data-name="Path 7005" d="M0,0H10.269V7.827H0Z" transform="matrix(0.707, 0.707, -0.707, 0.707, 38.695, 0)" fill="#fff"/>
+      <path id="Path_7006" data-name="Path 7006" d="M8,30.61h7.261L32.9,12.974,25.636,5.713,8,23.349Z" transform="translate(4.101 3.244)" fill="#fff"/>
+      <path id="Path_7007" data-name="Path 7007" d="M41.724,41.724H15.484c-.063,0-.128.024-.191.024-.08,0-.16-.022-.242-.024H7.841V7.841H24.412L29.253,3H7.841A4.844,4.844,0,0,0,3,7.841V41.724a4.844,4.844,0,0,0,4.841,4.841H41.724a4.842,4.842,0,0,0,4.841-4.841V20.745l-4.841,4.841Z" transform="translate(-3 -0.609)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

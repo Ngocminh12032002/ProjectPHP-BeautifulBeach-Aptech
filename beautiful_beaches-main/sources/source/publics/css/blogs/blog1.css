@@ -1,0 +1,465 @@
+body {
+    background: #f6f6f6;
+}
+.food_blogs {
+    width: 1200px;
+    margin: 0 auto;
+}
+.beach__blog,
+.beaches__blog {
+    width: 920px;
+}
+.post_content {
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    vertical-align: middle;
+    background: #fff;
+    padding: 16px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05) 
+}
+.post_content span {
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+.beaches__blog h1{
+    font-size: 4rem;
+}
+
+.post_thumbnail img {
+    width:920px;
+    margin-bottom: 18px;;
+}
+
+/* Social */
+.header .social {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.header .social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header .social li:last-child {
+    margin-right: 0;
+}
+
+.header .social li a {
+    color: #666;
+}
+
+/* Button */
+.header .button {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.header .button .btn:hover {
+    background: #fff;
+    color: #333;
+}
+
+.author-left {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #e7e7e7;
+    padding-right: 15px;
+    margin-right: 15px;
+    width: 22%;
+}
+
+.author-left img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.author-left h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.author-left h4 span {
+    display: block;
+    font-size: 14px;
+}
+
+.author-left p a {
+    color: #333;
+}
+
+.author-left p i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    border-radius: 100%;
+    border: 1px solid #e7e7e7;
+    margin-right: 5px;
+}
+
+.author-content {
+    float: left;
+    width: 90%;
+}
+
+.author-content .social-share {
+    float: none;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.title {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* Blog Comments */
+.blog-comments {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.single-comments {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.single-comments:last-child {
+    border-bottom: 0px solid;
+    padding: 0px;
+    margin: 0;
+}
+
+.single-comments .main {
+    overflow: hidden;
+}
+
+.single-comments .head {
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    width: 12%;
+}
+
+.single-comments .head img {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 100%;
+}
+
+.single-comments .body {
+    float: left;
+    width: 85%;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.single-comments .body::before {
+    position: absolute;
+    left: -14px;
+    border-top: solid transparent;
+    border-left: 15px solid transparent;
+    content: "";
+    top: -3px;
+    border-bottom: 15px solid #fff;
+}
+
+.single-comments h4 {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+}
+
+ .author-details {
+    background: #fff;
+    padding: 40px 20px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+ .author-left {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #e7e7e7;
+    padding-right: 15px;
+    margin-right: 15px;
+    width: 22%;
+}
+
+ .author-left img {
+    width: 100px !important;
+    height: 100px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+ .author-left h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+ .author-left h4 span {
+    display: block;
+    font-size: 14px;
+}
+
+ .author-left p a {
+    color: #333;
+}
+
+ .author-left p i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    border-radius: 100%;
+    border: 1px solid #e7e7e7;
+    margin-right: 5px;
+}
+
+ .author-content {
+    float: left;
+    width: 70%;
+}
+
+ .author-content .social-share {
+    float: none;
+    margin-top: 10px;
+}
+
+ .title {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.comment-info p {
+    color: #666;
+    font-size: 13px;
+}
+
+.comment-info p span {
+    margin-right: 10px;
+}
+
+.comment-info p span i {
+    margin: 0 5px;
+}
+
+.comment-info p a {
+    color: #666;
+}
+
+.comment-info p a i {
+    margin-right: 5px;
+}
+
+.comment-list {
+    padding-top: 30px;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.comment-list .body {
+    width: 78%;
+}
+
+/* Comments Form */
+.comments-form {
+    margin-top: 30px;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 15px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    padding-left: 20px;
+}
+
+.form-group textarea {
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    width: 100%;
+    padding-left: 10px;
+    resize: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    border-radius: 3px;
+    outline: none;
+    background: #fff;
+}
+
+.form-group input:hover,
+.form-group input:focus,
+.form-group textarea:hover {
+    outline: none;
+}
+
+.form-group.button {
+    margin: 0;
+    text-align: center;
+}
+
+.form-group .btn {
+    font-size: 14px;
+    width: 100%;
+    border: 0px;
+    color: #fff;
+    margin-top: 0;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0;
+    padding: 8px;
+    position: relative;
+    outline: none;
+}
+ 
+.form-group .btn:hover {
+    background: #333;
+}
+/* List blog */
+.blog__post--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    min-height: max-content;
+}
+.food__card {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    min-height: max-content;
+    grid-gap: 16px;
+    align-items: stretch;
+    border: 1px solid #ccc;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.food__card div img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.food__card div span {
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.food__card-item div:last-child {
+    grid-column: 4/4;
+    grid-row: 1/2;
+    font-size: 46px;
+    color: var(--primary-color);
+}
+
+.food__card-item:last-child {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.food__card-item:last-child h1 {
+    color: #fff;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+
+.blog__grid {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 32px;
+}
+
+.food__card {
+    width: 100%;
+    border: 1px solid #ccc;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+    grid-gap: 16px;
+    align-items: center;
+
+}
+
+.food__card div img {
+    width: 100%;
+}
+
+.food__card div:nth-child(2) span {
+    font-size: 18px !important;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.food__card div:nth-child(2) small {
+    font-size: 16px !important;
+}
+
+.card__footer--icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__footer--icon i {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-top: 6px;
+}
+
+.card__button button {
+    color: #fff;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    padding: 0 6px 2px 6px;
+    line-height: 25px;
+}
